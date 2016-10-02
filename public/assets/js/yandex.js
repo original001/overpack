@@ -2,7 +2,7 @@ $(document).ready(function() {
     if (document.getElementById('map')) {
         ymaps.ready(function() {
             var myMap = new ymaps.Map('map', {
-                center: [56.830935, 60.610464],
+                center: [55.159086, 61.376002],
                 zoom: 16,
                 controls: []
             })

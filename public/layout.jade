@@ -2,14 +2,11 @@
 html(lang="en")
 	head
 		meta(charset="UTF-8")
-		meta(name="viewport", content="width=1024")
+		meta(name="viewport", content="width=1320")
 		block title
 			title Страница
-		//- link(href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700|Roboto:400,300,300italic,400italic,500,500italic,700&subset=all',rel='stylesheet',type='text/css')
-		//- link(rel="stylesheet", href="assets/plugins/bootstrap/less/bootstrap.css")
-		//- link(rel="stylesheet", href="assets/plugins/fuelux/less/fuelux.css")
-		//- link(rel="stylesheet", href="assets/plugins/magnific-popup/dist/magnific-popup.css")
-		//- link(rel="stylesheet", href="assets/plugins/slick-carousel/slick/slick.css")
+		link(href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700&subset=all',rel='stylesheet',type='text/css')
+		link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1", crossorigin="anonymous")
 		link(rel="stylesheet", href="assets/css/main.css")
 		block css
 		script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
@@ -17,9 +14,6 @@ html(lang="en")
 			window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.11.1.min.js"><\/script>')	
 		<!--[if (gte IE 5)&(lte IE 9)]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		//- <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-		//- <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.1.7/es5-shim.min.js"></script>
-		//- <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.1.7/es5-sham.min.js"></script>
 		<![endif]-->
 	body
 		<!--[if lt IE 8]>
@@ -29,6 +23,13 @@ html(lang="en")
 			// HEAD BEGIN
 			header
 				.main
+					.header-l 
+						.logo overpack
+					.header-r
+						span.phone
+							i.fa.fa-mobile 
+							span.phone-pre +7
+							span.phone-number  913 345 34 34
 			// HEAD END
 			// MAIN BEGIN
 			.section
@@ -40,15 +41,24 @@ html(lang="en")
 		// FOOTER BEGIN
 		footer
 			.main
+				.footer-l.vcard
+					div
+						span.category Кальянная
+						span.fn.org  OverPack
+					.adr				
+						span.locality г. Челябинск,
+						span.street-address  проспект Ленина 73
+					div	Телефон
+						span.tel  +7 913 345 34 34
+					div Мы работаем 
+						span.workhours ежедневно с 16:00
+				.footer-r
+					.socials
+						a(href="https://vk.com/che_hl" target="_blank").fa.fa-vk
+						a(href="https://www.instagram.com/overpack_che/" target="_blank").fa.fa-instagram
+
 		// FOOTER END
 
-		//- script(src="assets/js/vendor/modernizr-2.6.2.min.js")
-		//- script(src="//api-maps.yandex.ru/2.1/?lang=ru_RU")
-		//- script(src="assets/plugins/slick-carousel/slick/slick.min.js")
-		//- script(src="assets/plugins/magnific-popup/dist/jquery.magnific-popup.min.js")
-		//- script(src="assets/plugins/bootstrap/js/tab.js")
-		//- script(src="assets/plugins/fuelux/js/radio.js")
-		//- script(src="assets/js/yandex.js")
-		script(src="assets/js/main.js")
+		//- script(src="assets/js/main.js")
 		block js
 		
